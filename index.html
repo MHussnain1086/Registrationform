@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form action="respo.html" method="GET" >
+    <h1 style="font-size: 40px;margin-left: 50px;">Registration Form</h1>
+
+    <p style="margin-left: 14px;">User Id: <input  type="text"  name="userid" id="id" placeholder="Enter your Id" required></p>
+    <p style="color:red;font-size: 13px;" id="iderror"></p>
+
+    <p>Password: <input onclick="validationId()" type="password" name="password" id=password placeholder="Password" required></p>
+    <p style="color:red;font-size: 13px;" id="passerror"></p>
+
+    <p style="margin-left: 23px;">Name: <input onclick="validationPass()" type="text" name="name" id="name" placeholder="Enter your Name" size="35px" required></p>
+<p style="color:red;font-size: 13px" id="naerror"></p>
+
+    <p style="margin-left: 9px;">Address: <input onclick="validationName()" type="text" name="address" id="address" placeholder="Enter Your Address (Optional)" size="35px"></p>
+    <p style="color:red;font-size: 13px" id="error"></p>
+
+    <p style="margin-left: 9px;">Country: <input  type="text" name="country" id="country" placeholder="Country" required></p>
+<p style="color:red;font-size: 13px" id="coerror"></p>
+
+    <p>ZIP Code: <input type="text" name="code" id="code" placeholder="Code" required></p>
+    <p style="color:red;font-size: 13px" id="ziperror"></p>
+
+    <p style="margin-left: 23px;">Email: <input onclick="validationZip()" type="email" name="email" id="email" placeholder="Email" size="35px" required></p>
+    <p style="color:red;font-size: 13px" id="emerror"></p>
+
+    <p style="margin-left: 38px;">Sex: <input type="radio" name="male" value="Male" id="radio" required>Male <input type="radio" name="male" value="Female" id="radio" required>Female</p>
+    <p style="color:red;font-size: 13px" id="raerror"></p>
+
+    <p style="margin-left: 0px;">Language: <input type="checkbox" name="english" value="english" id="checkbox">English <input type="checkbox" name="english" value="non-english" id="checkbox" >NON-English</p>
+    <p style="color:red;font-size: 13px" id="laerror"></p>
+
+     <p style="margin-left: 23px;"> About:</p><textarea style="margin-left: 70px;" name="aboutuser" cols="40" rows="8" placeholder="(Optional)"></textarea>
+     <p style="color:red;font-size: 13px" id="error"></p>
+     
+     <button type="submit" onclick="validationZip()" class="btn btn-primary" id="submit" value="submit">Submit</button>
+
+    
+    </form>
+    <script src="script.JS"></script>
+</body>
+</html>
